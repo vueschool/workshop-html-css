@@ -4,6 +4,36 @@
 		<meta charset="UTF-8">
 		<title>Exercise 8 - Start</title>
 
+		<style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+        .container > div {
+            color: white;
+            margin: 10px;
+            border-radius: 3px;
+            background: deeppink;
+            border: 5px solid black;
+        }
+        .container > div:nth-child(odd) {
+            width: 10%;
+        }
+        .container > div:nth-child(even) {
+            width: 20%;
+        }
+        .container > div:nth-child(2),
+        .container > div:nth-child(4),
+        .container > div:nth-child(9) {
+            width: 60%;
+        }
+        body {
+            margin: 0;
+        }
+		</style>
 
 	</head>
 	<body>
